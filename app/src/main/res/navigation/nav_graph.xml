@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fetchAudioFragment">
+
+    <fragment
+        android:id="@+id/fetchAudioFragment"
+        android:name="com.akshai.azymptotest.ui.fragments.FetchAudioFragment"
+        android:label="fragment_fetch_audio"
+        tools:layout="@layout/fragment_fetch_audio" >
+        <action
+            android:id="@+id/action_fetchAudioFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.akshai.azymptotest.ui.fragments.PlayerFragment"
+        android:label="PlayerFragment"
+        tools:layout="@layout/fragment_player" />
+</navigation>
